@@ -1,0 +1,17 @@
+Objectives.
+    1. Evolve attributes to properties.
+    2. Adapt ORM methods to validate ojbject state with properties.
+
+Updating the companies data model to add some constrains on the Department and Employee attributes.
+
+    1.The department name and location must be non-empty strings.
+    2. The Employee name and job title must be a non-empty strings.
+    3. The Employee department_id must ba a foreign key refernce to a department object that had been parsisted 
+    to the database.
+
+we'll evolve the attributes to be mamaged by property methods with setter methods that ensure the attributes are assigned valid values.
+evolve the deparment class to add property methds to manage the name and location attributes.
+the setter methods will check for non-empty string values prior to updating the object state.
+
+we will also update the Employee class to add property methods to manage the name, job_title and department_id attributes.
+Note that the department_id setter methods check to ensure we are assignign a valid department by checking the foreign key referne in the database.
